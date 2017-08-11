@@ -47,7 +47,8 @@ def create_url(base, path=None, *query):
     return url
 
 
-def create_cas_login_url(cas_url, cas_route, service, renew=None, gateway=None):
+def create_cas_login_url(
+        cas_url, cas_route, service, renew=None, gateway=None):
     """ Create a CAS login URL .
 
     Keyword arguments:
@@ -100,10 +101,10 @@ def create_cas_logout_url(cas_url, cas_route, service=None):
 def create_cas_validate_url(cas_url, cas_route, service, ticket,
                             renew=None):
     """ Create a CAS validate URL.
-
     Keyword arguments:
     cas_url -- The url to the CAS (ex. http://sso.pdx.edu)
-    cas_route -- The route where the CAS lives on server (ex. /cas/serviceValidate)
+    cas_route -- The route where the CAS lives on server \
+    (ex. /cas/serviceValidate)
     service -- (ex.  http://localhost:5000/login)
     ticket -- (ex. 'ST-58274-x839euFek492ou832Eena7ee-cas')
     renew -- "true" or "false"

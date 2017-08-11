@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-#Copyright (C) 2014, Cameron Brandon White
+# Copyright (C) 2014, Cameron Brandon White
 # -*- coding: utf-8 -*-
 
 import setuptools
@@ -12,7 +12,7 @@ if __name__ == "__main__":
         description="Flask extension for CAS",
         author="Cameron Brandon White",
         author_email="cameronbwhite90@gmail.com",
-        url="https://github.com/cameronbwhite/Flask-CAS",
+        url="https://github.com/ruiaylin/Flask-CAS",
         long_description=textwrap.dedent("""\
             Flask-CAS
             =========
@@ -22,14 +22,13 @@ if __name__ == "__main__":
 
             CAS
             ===
-
-            The Central Authentication Service (CAS) is a single sign-on 
-            protocol for the web. Its purpose is to permit a user to access 
-            multiple applications while providing their credentials (such as 
-            userid and password) only once. It also allows web applications 
-            to authenticate users without gaining access to a user's security 
-            credentials, such as a password. The name CAS also refers to a 
-            software package that implements this protocol. 
+            The Central Authentication Service (CAS) is a single sign-on
+            protocol for the web. Its purpose is to permit a user to access
+            multiple applications while providing their credentials (such as
+            userid and password) only once. It also allows web applications
+            to authenticate users without gaining access to a user's security
+            credentials, such as a password. The name CAS also refers to a
+            software package that implements this protocol.
 
             (Very short) Setup Tutorial
             ===========================
@@ -54,7 +53,7 @@ if __name__ == "__main__":
 
             .. code:: python
 
-                app.config['CAS_SERVER'] = 'https://sso.pdx.edu' 
+                app.config['CAS_SERVER'] = 'https://sso.pdx.edu'
 
                 app.config['CAS_AFTER_LOGIN'] = 'route_root'
 
@@ -71,15 +70,15 @@ if __name__ == "__main__":
         packages=[
             "flask_cas",
         ],
-        install_requires = [
+        install_requires=[
             "Flask",
             "xmltodict",
         ],
-        test_requires = [
+        test_requires=[
             "Nose",
             "Mock",
         ],
-        test_suite = "nose.collector",
+        test_suite="nose.collector",
         include_package_data=True,
         classifiers=[
             'Environment :: Web Environment',
